@@ -7,6 +7,17 @@ public class PuntoImpl implements Punto{
 	private Double x;
 	private Double y;
 	
+	public PuntoImpl() {
+		this.x=0.0;
+		this.y= 0.0;
+		
+	}
+	
+	public PuntoImpl(Double x, Double y) {
+		this.x=x;
+		this.y= y;
+	}
+	
 	public Double getX() {
 		return x;
 	}
@@ -29,7 +40,7 @@ public class PuntoImpl implements Punto{
 	}
 	@Override
 	public String toString() {
-		return "(" + getX() + ", getY()=" + getY() + ")";
+		return "(" + getX() + ", " + getY() + ")";
 	}
 	
 	@Override
